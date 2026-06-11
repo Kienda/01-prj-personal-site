@@ -216,9 +216,11 @@ body {
 
 /* Icon inside skill card */
 .skill-card .skill-icon {
-  font-size: 36px;
+  display: block;
+  font-size: 40px;
   color: var(--accent-blue);
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  line-height: 1;
 }
 
 /* ========================================
@@ -302,6 +304,97 @@ body {
 }
 
 /* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.contact {
+  padding: 80px 20px;
+  background-color: var(--background);
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: var(--dark-navy);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-card {
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-field-full {
+  width: 100%;
+}
+
+.contact-field label {
+  font-weight: 600;
+  color: var(--dark-navy);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  font-size: 16px;
+  color: var(--text);
+  background-color: #F9FAFB;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 4px rgba(78, 168, 222, 0.15);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.submit-button {
+  width: 150px;
+  padding: 14px 24px;
+  background-color: var(--dark-navy);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-blue);
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 
@@ -332,6 +425,14 @@ body {
   /* Smaller hero subtitle for mobile */
   .hero .subtitle {
     font-size: 18px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
   }
 
   /* Stack navigation links vertically on very small screens */
