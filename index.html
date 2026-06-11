@@ -3,139 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdoulaye Diallo - Portfolio</title>
+  <title>Abdoulaye Diallo | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-fO2nA2ZQ1eCVcp06Wsx3kIYFZVZqkb7l5S6Bn7Yz5Sf0WC2c8jWqO4O0lCZZxv6V9f0J0zh7x84eq0kVj+4CnwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <nav class="navbar">
+  <header class="navbar">
     <div class="container nav-inner">
-      <div class="brand">
+      <a href="#home" class="brand-link">
         <span class="brand-icon">AD</span>
-        <div class="brand-details">
+        <div class="brand-text">
           <span class="brand-name">Abdoulaye Diallo</span>
           <span class="brand-role">Software Engineer</span>
         </div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#featured">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-contact">Contact</a></li>
-      </ul>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Software Engineer</p>
+          <p class="hero-tag">Software Engineer</p>
           <h1>Abdoulaye Diallo</h1>
-          <p class="hero-subtitle">Building scalable full-stack applications</p>
-          <p class="hero-description">CS student at Columbia University building production web applications. Looking for Software Engineering internships for Summer 2026.</p>
-          <div class="hero-actions">
-            <a href="#featured" class="button button-primary">View Projects</a>
-            <a href="#resume" class="button button-secondary">Resume</a>
-            <a href="#contact" class="button button-ghost">Contact Me</a>
+          <p class="hero-role">Computer Science Student at Columbia University</p>
+          <p class="hero-subtitle">Software Engineer</p>
+          <p class="hero-description">Welcome to my portfolio. This website showcases the projects I am building in my web development course.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="button button-primary">View Projects</a>
+            <a href="#contact" class="button button-secondary">Contact</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="photo-card">
-            <img src="img/me.png" alt="Abdoulaye Diallo" class="hero-photo">
-          </div>
+        <div class="hero-photo-card">
+          <img src="img/me.png" alt="Abdoulaye Diallo" class="hero-photo">
         </div>
       </div>
     </section>
 
-    <section class="stats" aria-label="Profile highlights">
-      <div class="container stats-grid">
-        <article class="stat-card">
-          <h3>Columbia CS '28</h3>
-          <p>B.A. Computer Science, New York</p>
-        </article>
-        <article class="stat-card">
-          <h3>3.6 GPA</h3>
-          <p>Dean's List, academic excellence</p>
-        </article>
-        <article class="stat-card">
-          <h3>10+ Projects</h3>
-          <p>Web apps, platforms & tools</p>
-        </article>
-        <article class="stat-card">
-          <h3>JKC Scholar</h3>
-          <p>Jack Kent Cooke Scholar</p>
-        </article>
+    <section id="about" class="section about-section">
+      <div class="container section-card">
+        <div class="section-heading">
+          <span>About</span>
+          <h2>About Me</h2>
+        </div>
+        <p>I am a Computer Science student at Columbia University and a BMCC graduate. I am passionate about web development, software engineering, and using technology to solve real-world problems. This portfolio will grow as I complete more projects in my course.</p>
       </div>
     </section>
 
-    <section id="featured" class="featured">
-      <div class="container featured-header">
+    <section id="skills" class="section skills-section">
+      <div class="container section-heading-row">
         <div>
-          <h2>Featured Projects</h2>
-          <p>Production-ready applications — full-stack, desktop, and web.</p>
+          <span>Skills</span>
+          <h2>Technical Skills</h2>
         </div>
-        <a href="#projects" class="view-all">View all →</a>
+      </div>
+      <div class="container skill-grid">
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML</h3>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Design</h3>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container section-heading-row">
+        <div>
+          <span>Projects</span>
+          <h2>Featured Course Projects</h2>
+        </div>
       </div>
       <div class="container project-grid">
         <article class="project-card project-blue">
-          <h3>StudentSuccess</h3>
-          <p>Full-stack academic guidance platform with role-based auth (admin/student), personalized dashboards, and CRUD operations backed by web services.</p>
+          <h3>Personal Portfolio Website</h3>
+          <p>My first single-page portfolio website built with HTML and CSS for my web development course.</p>
+          <p class="project-tech">HTML, CSS</p>
+          <a href="#home" class="project-link">View Project</a>
         </article>
-        <article class="project-card project-green">
-          <h3>College Navigator</h3>
-          <p>Desktop academic tracking app built in C++ with Qt and SQLite. Helps students track milestones and receive personalized academic guidance.</p>
+        <article class="project-card project-blue-light">
+          <h3>PetQuest Foster CTA</h3>
+          <p>A simple call-to-action landing page encouraging people to foster rescue pets.</p>
+          <p class="project-tech">HTML, CSS</p>
+          <a href="https://kienda.github.io/01-pet-fostering-cta/" target="_blank" rel="noopener" class="project-link">View Project</a>
         </article>
         <article class="project-card project-purple">
-          <h3>Personal Portfolio</h3>
-          <p>This site — built with HTML, CSS, and JavaScript. Includes a working contact form and responsive design for mobile and desktop.</p>
+          <h3>ColumbiaCribs UI/UX</h3>
+          <p>A student housing review platform design project for Columbia University students.</p>
+          <p class="project-tech">UI/UX Design</p>
+          <a href="https://github.com/Kienda/columbiacribs-uiux/tree/main" target="_blank" rel="noopener" class="project-link">View Project</a>
+        </article>
+        <article class="project-card project-green">
+          <h3>Global High Tech</h3>
+          <p>A professional business website for digital services, design, marketing, and technology.</p>
+          <p class="project-tech">Web Design</p>
+          <a href="https://globalhightech.com/" target="_blank" rel="noopener" class="project-link">View Project</a>
+        </article>
+        <article class="project-card project-cyan">
+          <h3>Heuvia</h3>
+          <p>A learning management platform designed to support modern education.</p>
+          <p class="project-tech">EdTech</p>
+          <a href="https://www.heuvia.com/" target="_blank" rel="noopener" class="project-link">View Project</a>
+        </article>
+        <article class="project-card project-navy">
+          <h3>AI Professor Review Guide</h3>
+          <p>A project using AI concepts to help students explore professor review information.</p>
+          <p class="project-tech">AI Project</p>
+          <a href="https://github.com/Kienda/ai201-project1-unofficial-guide-starter" target="_blank" rel="noopener" class="project-link">View Project</a>
         </article>
       </div>
     </section>
 
-    <section id="resume" class="resume">
-      <div class="container resume-card">
+    <section id="contact" class="section contact-section">
+      <div class="container section-heading-row">
         <div>
-          <h2>Resume</h2>
-          <p>Download the latest resume to review experience, technical skills, and academic achievements.</p>
+          <span>Contact</span>
+          <h2>Get in Touch</h2>
         </div>
-        <a href="#contact" class="button button-primary">Get in Touch</a>
       </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container about-card">
-        <h2>About Me</h2>
-        <p>I am a Computer Science student at Columbia University and a BMCC graduate. I am passionate about web development, software engineering, and using technology to solve real-world problems.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
       <div class="container contact-card">
-        <h2>Contact</h2>
-        <form class="contact-form">
-          <div class="form-row">
-            <label>
-              Full name:
-              <input type="text" name="full-name" placeholder="Enter your name">
-            </label>
-            <label>
-              Email:
-              <input type="email" name="email" placeholder="Enter your email">
-            </label>
-          </div>
-          <label>
-            Message:
-            <textarea name="message" rows="6" placeholder="Write your message"></textarea>
-          </label>
-          <button type="submit" class="button button-primary">Submit</button>
-        </form>
+        <p>Connect with me on LinkedIn, GitHub, or visit my professional portfolio website.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/abdoulaye-alhassane-diallo/" target="_blank" rel="noopener" class="contact-button">LinkedIn</a>
+          <a href="https://github.com/Kienda" target="_blank" rel="noopener" class="contact-button">GitHub</a>
+          <a href="https://abdoulayediallo.com" target="_blank" rel="noopener" class="contact-button">Portfolio</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Abdoulaye Diallo. All rights reserved.</p>
+    <div class="container footer-content">
+      <p>© 2026 Abdoulaye Alhassane Diallo. All Rights Reserved.</p>
     </div>
   </footer>
 </body>
