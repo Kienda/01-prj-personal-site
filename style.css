@@ -91,11 +91,22 @@ a {
 .nav-links a {
   color: #fff;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
   opacity: 0.85;
+}
+
+.nav-links .nav-contact {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.nav-links .nav-contact:hover {
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .hero {
