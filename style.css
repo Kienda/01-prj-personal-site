@@ -1,1 +1,337 @@
-/* Add you CSS here */
+/* ========================================
+   PERSONAL PORTFOLIO WEBSITE - STYLES
+   ======================================== */
+
+/* Color Palette */
+:root {
+  --dark-navy: #1C2D4E;
+  --light-blue: #89B5E6;
+  --accent-blue: #4EA8DE;
+  --background: #F8FAFC;
+  --text: #1E293B;
+  --white: #FFFFFF;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+/* Container for spacing */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+
+.navbar {
+  background-color: var(--dark-navy);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo text in navbar */
+.logo {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navigation links list */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Navigation links styling */
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Navigation link hover effect */
+.nav-links a:hover {
+  color: var(--accent-blue);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+  background: linear-gradient(rgba(28, 45, 78, 0.8), rgba(28, 45, 78, 0.8)), 
+              url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Hero content container */
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--accent-blue);
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+/* Hero title */
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Hero subtitle */
+.hero .subtitle {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: var(--light-blue);
+}
+
+/* Hero description */
+.hero .description {
+  font-size: 18px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #E0E7FF;
+}
+
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+
+.about {
+  padding: 80px 20px;
+  background-color: var(--white);
+}
+
+/* About heading */
+.about h2 {
+  font-size: 36px;
+  color: var(--dark-navy);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* About paragraph */
+.about p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+/* ========================================
+   SKILLS SECTION
+   ======================================== */
+
+.skills {
+  padding: 80px 20px;
+  background-color: var(--background);
+}
+
+/* Skills heading */
+.skills h2 {
+  font-size: 36px;
+  color: var(--dark-navy);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Skills grid - arranges skill cards in rows */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual skill card styling */
+.skill-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 150px;
+  border-top: 4px solid var(--accent-blue);
+  transition: transform 0.3s ease;
+}
+
+/* Skill card hover effect */
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skill card heading */
+.skill-card h3 {
+  color: var(--dark-navy);
+  font-size: 18px;
+}
+
+/* ========================================
+   PROJECTS SECTION
+   ======================================== */
+
+.projects {
+  padding: 80px 20px;
+  background-color: var(--white);
+}
+
+/* Projects heading */
+.projects h2 {
+  font-size: 36px;
+  color: var(--dark-navy);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Projects grid - arranges project cards in rows */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual project card styling */
+.project-card {
+  background-color: var(--background);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  border-left: 4px solid var(--accent-blue);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project card title */
+.project-card h3 {
+  color: var(--dark-navy);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Project card description */
+.project-card p {
+  color: var(--text);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Project tech tags */
+.project-tech {
+  color: var(--accent-blue);
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px !important;
+}
+
+/* Project link button */
+.project-link {
+  display: inline-block;
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Project link hover effect */
+.project-link:hover {
+  background-color: var(--dark-navy);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+/* Footer text */
+.footer p {
+  margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - Mobile Styles
+   ======================================== */
+
+/* Styles for small screens (tablets and phones) */
+@media (max-width: 768px) {
+  /* Smaller hero title for mobile */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  /* Smaller hero subtitle for mobile */
+  .hero .subtitle {
+    font-size: 18px;
+  }
+
+  /* Stack navigation links vertically on very small screens */
+  @media (max-width: 480px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

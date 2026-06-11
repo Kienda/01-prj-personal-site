@@ -2,10 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdoulaye Diallo - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Abdoulaye Diallo</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <!-- Profile image -->
+      <img src="img/me.png" alt="Abdoulaye Diallo" class="profile-image">
+      
+      <!-- Hero text -->
+      <h1>Abdoulaye Diallo</h1>
+      <p class="subtitle">Computer Science Student at Columbia University</p>
+      <p class="subtitle">Software Engineer</p>
+      
+      <!-- Short description -->
+      <p class="description">Welcome to my portfolio. This website showcases the projects I am building in my web development course.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student at Columbia University and a BMCC graduate. I am passionate about web development, software engineering, and using technology to solve real-world problems. This portfolio will grow as I complete more projects in my course.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Skill card 1 -->
+        <div class="skill-card">
+          <h3>HTML</h3>
+        </div>
+        
+        <!-- Skill card 2 -->
+        <div class="skill-card">
+          <h3>CSS</h3>
+        </div>
+        
+        <!-- Skill card 3 -->
+        <div class="skill-card">
+          <h3>GitHub</h3>
+        </div>
+        
+        <!-- Skill card 4 -->
+        <div class="skill-card">
+          <h3>Web Design</h3>
+        </div>
+        
+        <!-- Skill card 5 -->
+        <div class="skill-card">
+          <h3>Responsive Design</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>My first single-page portfolio website built with HTML and CSS for my web development course.</p>
+          <p class="project-tech">HTML, CSS</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>PetQuest Foster CTA</h3>
+          <p>A simple call-to-action landing page encouraging people to foster rescue pets.</p>
+          <p class="project-tech">HTML, CSS</p>
+          <a href="https://kienda.github.io/01-pet-fostering-cta/" class="project-link" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>ColumbiaCribs UI/UX</h3>
+          <p>A student housing review platform design project for Columbia University students.</p>
+          <p class="project-tech">UI/UX Design</p>
+          <a href="https://github.com/Kienda/columbiacribs-uiux/tree/main" class="project-link" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <h3>Global High Tech</h3>
+          <p>A professional business website for digital services, design, marketing, and technology.</p>
+          <p class="project-tech">Web Design</p>
+          <a href="https://globalhightech.com/" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Abdoulaye Diallo. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
