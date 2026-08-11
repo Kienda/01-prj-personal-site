@@ -341,6 +341,75 @@ a {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.project-story {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: 14px;
+}
+
+.project-story summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.94rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.project-story summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-story summary::before {
+  content: "\002B";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.project-story[open] summary::before {
+  content: "\2212";
+}
+
+.project-story summary:hover::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.project-story summary:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.story-body {
+  margin-top: 14px;
+}
+
+.story-body h4 {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.story-body h4 + p {
+  margin-bottom: 16px;
+  font-size: 0.96rem;
+}
+
+.story-body h4 + p:last-child {
+  margin-bottom: 0;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;

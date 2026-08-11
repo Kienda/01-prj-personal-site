@@ -117,6 +117,19 @@
           <h3>Thirst to Thrive</h3>
           <p>A story-driven browser adventure for charity: water. Players restore a village water system across six missions, built with vanilla JavaScript and no game engine, canvas, or framework.</p>
           <p class="project-tech">JavaScript, Game Logic, Accessibility</p>
+          <details class="project-story">
+            <summary>Read the full story</summary>
+            <div class="story-body">
+              <h4>What I built</h4>
+              <p>A story-driven browser adventure where you play an explorer helping Village Kumbala restore its broken water system. There are no enemies to fight — progress comes from finding a clean spring, recovering tools, repairing the hand pump, and delivering water to the village. It runs on about 1,000 lines of plain JavaScript with no game engine, canvas, or framework.</p>
+              <h4>Why I built it</h4>
+              <p>I wanted to raise awareness on my college campus and get other students to take part in charity: water. Facts on a page are easy to scroll past, but a game is something students will actually stop and play — and by the end they have worked through what it takes to bring clean water to a village.</p>
+              <h4>Technologies I used</h4>
+              <p>HTML, CSS, and vanilla JavaScript. No dependencies, no build step. The interface uses real DOM elements with ARIA labels so the game stays accessible, and it supports both keyboard controls and on-screen buttons for phones.</p>
+              <h4>What I learned</h4>
+              <p>I learned how to manage state in a program that never stops running. A game has to track where the player is, which mission is active, and what they are carrying — all at the same time — and every one of those has to stay in sync. I also learned that building for a phone is not the same as making the layout smaller: a keyboard-only design is unplayable on a touch screen, so I had to add a direction pad and an interact button.</p>
+            </div>
+          </details>
           <div class="project-links">
             <a href="https://kienda.github.io/05-charity-water-game-prototype/" target="_blank" rel="noopener" class="project-link">Play Game</a>
             <a href="https://github.com/Kienda/05-charity-water-game-prototype" target="_blank" rel="noopener" class="project-link project-link-secondary">View Code</a>
@@ -126,6 +139,19 @@
           <h3>L'Oréal Smart Product Advisor</h3>
           <p>An AI beauty assistant that recommends products and routines. A Cloudflare Worker proxies the OpenAI API so the key stays server-side, and the chat keeps full conversation memory.</p>
           <p class="project-tech">JavaScript, OpenAI API, Cloudflare Workers</p>
+          <details class="project-story">
+            <summary>Read the full story</summary>
+            <div class="story-body">
+              <h4>What I built</h4>
+              <p>An AI beauty advisor that answers questions about L'Oréal products and builds personalized routines. It remembers what you tell it across the whole conversation, so you can mention your hair type once and it stays relevant.</p>
+              <h4>Why I built it</h4>
+              <p>L'Oréal wanted to show what AI could do for product discovery. I wanted to find out how a real AI model actually gets connected to a normal web page.</p>
+              <h4>Technologies I used</h4>
+              <p>JavaScript, the OpenAI API, and a Cloudflare Worker I wrote and deployed myself. HTML and CSS for the interface.</p>
+              <h4>What I learned</h4>
+              <p>This is the project where API integration finally clicked for me. I learned that an API key can never live in frontend JavaScript, because anyone can open the browser and read it — so I deployed a Cloudflare Worker to hold the key and pass my requests through to OpenAI. I also learned that a chatbot has no memory by default: it forgot everything between messages until I started sending the full conversation history with every request. Once I understood this pattern, I could connect to any API.</p>
+            </div>
+          </details>
           <div class="project-links">
             <a href="https://kienda.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
             <a href="https://github.com/Kienda/08-prj-loreal-chatbot" target="_blank" rel="noopener" class="project-link project-link-secondary">View Code</a>
@@ -135,6 +161,19 @@
           <h3>NASA Space Explorer</h3>
           <p>An app that fetches NASA's Astronomy Picture of the Day over any date range and renders a gallery of images and videos with a keyboard-accessible detail modal.</p>
           <p class="project-tech">JavaScript, NASA API, Async Fetch</p>
+          <details class="project-story">
+            <summary>Read the full story</summary>
+            <div class="story-body">
+              <h4>What I built</h4>
+              <p>An app that pulls NASA's Astronomy Picture of the Day for any date range you choose and displays the results as a gallery, with a detail view you can open for each entry using the mouse or the keyboard.</p>
+              <h4>Why I built it</h4>
+              <p>After the L'Oréal chatbot I wanted to prove the API skill was real and not one lucky project, so I connected to a completely different API from a completely different organization.</p>
+              <h4>Technologies I used</h4>
+              <p>JavaScript with async fetch, NASA's public APOD API, HTML and CSS.</p>
+              <h4>What I learned</h4>
+              <p>This confirmed that API integration is a repeatable skill: read the documentation, build the request, handle the response. The new lesson was judgment about keys. NASA's key is free and rate-limited and the browser calls NASA directly, so the key is public no matter where I put it — the opposite of the L'Oréal project, where the key had to be hidden behind a server. Knowing which situation you are in is the real skill. I also learned that live data is messy: some days return a video instead of an image, so I wrote a separate path for those instead of letting them break the gallery.</p>
+            </div>
+          </details>
           <div class="project-links">
             <a href="https://kienda.github.io/07-nasa-space-explorer/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
             <a href="https://github.com/Kienda/07-nasa-space-explorer" target="_blank" rel="noopener" class="project-link project-link-secondary">View Code</a>
@@ -144,6 +183,19 @@
           <h3>Intel Sustainability Timeline</h3>
           <p>A responsive interactive timeline of Intel's sustainability milestones, with hover transitions, an audited accessibility pass, and automatic right-to-left layout for translated pages.</p>
           <p class="project-tech">HTML, CSS, JavaScript, Accessibility</p>
+          <details class="project-story">
+            <summary>Read the full story</summary>
+            <div class="story-body">
+              <h4>What I built</h4>
+              <p>An interactive timeline of Intel's sustainability milestones that adapts to desktop and mobile, and automatically flips its entire layout to right-to-left when the page is translated into Arabic, Hebrew, Persian, or Urdu. It scores 100 out of 100 on the Lighthouse accessibility audit.</p>
+              <h4>Why I built it</h4>
+              <p>The assignment was a responsive timeline. I added language direction support because a timeline reads in one direction by design, and I realized that if someone translated the page into Arabic the whole layout would fall apart.</p>
+              <h4>Technologies I used</h4>
+              <p>HTML, CSS, and JavaScript, using a MutationObserver to watch for language changes after the page loads. Lighthouse for accessibility testing.</p>
+              <h4>What I learned</h4>
+              <p>I learned to plan a layout before building it, not after. A language like Arabic is written right to left, so without planning for it the UI gets messed up — the timeline flows the wrong way and the text alignment fights the content. I detect direction three ways: the page's language tag, the CSS classes translation tools add, and as a last resort by counting how many Arabic or Hebrew characters are actually on the page. The hardest part to figure out was that translation happens <em>after</em> the page has already loaded, so I had to watch for changes and re-apply the direction instead of checking only once at startup.</p>
+            </div>
+          </details>
           <div class="project-links">
             <a href="https://kienda.github.io/03-prj-intel/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
             <a href="https://github.com/Kienda/03-prj-intel" target="_blank" rel="noopener" class="project-link project-link-secondary">View Code</a>
