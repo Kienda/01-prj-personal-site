@@ -341,8 +341,35 @@ a {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-links .project-link {
+  margin: 0;
+}
+
+.project-link-secondary {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.45);
+}
+
+.project-link-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
 .project-blue {
   background: linear-gradient(135deg, #1C2D4E 0%, #4EA8DE 100%);
+}
+
+.project-teal {
+  background: linear-gradient(135deg, #0B5563 0%, #21B6C7 100%);
+}
+
+.project-rose {
+  background: linear-gradient(135deg, #7A1F3D 0%, #D9557B 100%);
 }
 
 .project-blue-light {
